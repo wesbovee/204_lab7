@@ -18,10 +18,10 @@ jobs:
           distribution: 'adopt'
           architecture: x64
       - name: clean
-        run: mvn -ntp clean
+        run: mvn -f ~/204_lab7/github-calculator/pom.xml -ntp clean
       - name: Build 
-        run: mvn -ntp compile 
+        run: mvn -f ~/204_lab7/github-calculator/pom.xml -ntp compile 
       - name: Short tests
-        run: mvn -ntp tet -Dtest='CalculatorTest'
+        run: mvn -f ~/204_lab7/github-calculator/pom.xml -ntp tet -Dtest='CalculatorTest'
       - name: Long tests
-        run: mvn -ntp test -Dtest='CalculatorTestThorough'
+        run: mvn -f ~/204_lab7/github-calculator/pom.xml -ntp test -Dtest='CalculatorTestThorough'
