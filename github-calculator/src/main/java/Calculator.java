@@ -1,7 +1,6 @@
 
 class Calculator {
-
-//this comment is different so hopefully it triggers
+//this comment
     Calculator(){
 
     }
