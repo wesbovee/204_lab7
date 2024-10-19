@@ -16,7 +16,7 @@ jobs:
         with:
           java-version: '11'
           distribution: 'adopt'
-          architecture: x6x
+          architecture: x64
       - name: clean
         run: mvn -ntp clean
       - name: Build 
